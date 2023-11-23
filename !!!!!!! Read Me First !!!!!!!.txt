@@ -1,0 +1,20 @@
+This project consist react application for front-end and .Net Web API as back-end
+	Folder Name 'UI' -> front-end
+	Folder Name 'API' -> back-end
+01. First we nned to create Database
+	01.Open Sql Server Management Studio
+	01. Create a Database naming 'FormulaOneDev'
+	02. First run #1. FormulaOne Structure SQL File filr DBScript folder on that created database
+	03. Then run #2. FormulaOne Data SQL file  
+02. To run back-end
+ 	01.Open F1 .sln file in Visual studio 2022 or later version.
+	02.Set Connection string in appsettings.json according to your server settings
+(replace '[Your Server Name]' as your server name of SQL Server.you can get it when you trying to log Sql Server management studio you willl prompt a popup requesting username and password.In there you can see the server name of your server.copy that name replace it into appsetting.json -> DefaultConnection -> [Your Server Name].)
+	"DefaultConnection": "[Your Server Name];Initial Catalog=FormulaOneDev;Integrated Security=true;MultipleActiveResultSets=true;TrustServerCertificate=true"
+	03. Build & Run
+03. To run front-end
+	01. open content inside UI folder using VS.code
+	02. open a terminal and execute command 'npm install', this will install all required npm modules.
+	03. Execute 'npm start', this will start react app on your default broser.
+	
+	
